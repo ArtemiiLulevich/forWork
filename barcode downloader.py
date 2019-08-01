@@ -88,10 +88,11 @@ def _get_entry_text(entry):
 
 def get_sticker_by_barcode(barcode):
     parameters = {'token' : '5ad3833f-083f-2867-e053-6d28310abbf5'}
+    headers = {'Authorization': 'Bearer 998e005e-accb-35ed-adde-abf4480f18dc'}
 
-    url = 'http://10.255.102.215:8080/UkrPostAPI/shipments/{}/sticker'.format(barcode)
+    url = 'https://ukrposhta.ua//ecom//0.0.1//shipments//{}//sticker'.format(barcode)
 
-    data = requests.get(url, parameters)
+    data = requests.get(url, parameters, headers=headers)
     return data
 
 
