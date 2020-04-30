@@ -1,0 +1,23 @@
+# idea folder
+.idea/
+# Environment
+ll_env/
+
+**.iml
+**.c
+**.json
+
+__pycached__/
+
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__/
+Blog/db.sqlite3
+media
+
+#
+*.svg
+*.csv
+*.json
